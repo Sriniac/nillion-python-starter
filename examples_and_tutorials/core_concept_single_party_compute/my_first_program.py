@@ -54,7 +54,7 @@ async def main():
     print(f"Computing using program {program_id}")
     print(f"Use secret store_id: {store_id}")
 
-    computation_time_secrets = nillion.Secrets({"my_int2": nillion.SecretInteger(10)})
+    computation_time_secrets = nillion.Secrets({"factor": nillion.SecretInteger(10)})
 
     # Compute on the secret
     compute_id = await client.compute(
